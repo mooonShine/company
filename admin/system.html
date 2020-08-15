@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>玉龙空间设计</title>
+  <link rel="stylesheet" href="./layui/css/layui.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">玉龙空间设计管理后台</div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="case.html">案例上传</a></li>
+      <li class="layui-nav-item"><a href="news.html">企业动态</a></li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+          <span class="user">管理员</span>
+        </a>
+      </li>
+      <li class="layui-nav-item"><a href="">退了</a></li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item">
+          <a class="" href="index.html">控制台</a>
+        </li>
+        <li class="layui-nav-item">
+          <a class="" href="javascript:;">案例管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="case.html">案例上传</a></dd>
+            <dd><a href="allcase.html">全部案例</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">企业动态</a>
+          <dl class="layui-nav-child">
+            <dd><a href="news.html">发布动态</a></dd>
+            <dd><a href="news.html">全部动态</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+            <a href="javascript:;">系统设置</a>
+            <dl class="layui-nav-child">
+                <dd><a href="system.html">修改密码</a></dd>
+            </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div style="padding: 15px;">
+        <fieldset class="layui-elem-field">
+            <legend>系统-修改密码</legend>
+            <div class="layui-field-box">
+                <form class="layui-form" action="./inc/system.php" method="post">
+                  <input type="hidden" name="method" value="newPwd">
+                  <input type="hidden" name="id" value="">
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">原密码</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="pwd" lay-verify="pwd" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                    </div>
+                  </div>
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">新密码</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="newPwd" lay-verify="newPwd" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                    </div>
+                  </div>
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">确认新密码</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="cPwd" lay-verify="cPwd" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                    </div>
+                  </div>
+                  <div class="layui-form-item">
+                    <div class="layui-input-block">
+                      <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+      </fieldset>
+    </div>
+  </div>
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © 内蒙古玉龙空间设计有限公司
+  </div>
+</div>
+<script type="text/javascript" src="./javascript/jquery.min.js"></script>
+<script type="text/javascript" src="./javascript/jquerySession.js"></script>
+<script type="text/javascript" src="./layui/layui.js"></script>
+<script type="text/javascript" src="./javascript/index.js"></script>
+<script type="text/javascript" src="./javascript/system.js"></script>
+</body>
+</html>

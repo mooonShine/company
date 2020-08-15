@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html class="">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="keywords" content="微信开发" />
+<meta name="description" content="微信开发" />
+<title>微信开发_九度科技</title>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="css/iconfont.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet">
+<link href="css/carousel.css" rel="stylesheet">
+<link href="css/global.css" rel="stylesheet">
+
+
+
+<style>
+
+.pc_header .pc_header_content .header_content_right .menu ul li .DropDown{
+	-webkit-transform: scale(1);
+   -moz-transform: scale(1);
+    -ms-transform: scale(1);
+     -o-transform: scale(1);
+           filter: scale(1);
+           filter: transform;
+       transition: all 0.5s ease 0s;
+-webkit-transform: all 0.5s ease 0s; 
+	cursor:pointer;
+	opacity: 1;
+}
+</style>
+</head>
+<div class="pc_header">
+	<div class="circle"></div>
+	<div class="pc_header_content clear">
+		<a href="index.html" class="header_content_logo fl"><img src="images/logo.png"></a>
+		<div class="header_content_right clear fr">
+			<div class="menu fl clear">
+			    <ul>
+			        <li class="fl "><a href="index.html" class="menu_title">首页</a></li>
+			        <li class="fl "><a href="about.html#" class="menu_title">关于我们</a></li>
+			        <li class="fl on">
+						<a href="javascript:;" class="menu_title service_items">服务项目</a>
+						<div class="DropDown clear">
+			        		<div class="DropDown_content">
+			        			<a href="service.html#" class="fl ">
+				        			<dd class="iconfont">&#xe70b;</dd>
+				        			<dt>高端网站定制</dt>
+				        		</a>
+                                <a href="weixin.html#" class="fl on">
+				        			<dd class="iconfont">&#xe629;</dd>
+				        			<dt>微信定制</dt>
+				        		</a>
+				        		
+				        		<a href="app.html" class="fl ">
+				        			<dd class="iconfont">&#xe6c0;</dd>
+				        			<dt>APP开发服务</dt>
+				        		</a>
+				        		
+                                <a href="yingxiao.html" class="fl ">
+				        			<dd class="iconfont">&#xe634;</dd>
+				        			<dt>网络营销服务</dt>
+				        		</a>
+			        		</div>
+			        	</div>
+					</li>
+			        <li class="fl "><a href="case.html" class="menu_title">案例展示</a></li>
+			        <li class="fl "><a href="news.html" class="menu_title">新闻动态</a></li>
+			        <li class="fl "><a href="contact.html" class="menu_title">联系我们</a></li>
+			    </ul>
+			</div>
+			<div class="header_content_phone fr">
+				<span class="iconfont">&#xe6ee;</span>0476-8783232
+			</div>
+		</div>
+		<div class="burger fr">
+		    <div class="x"></div>
+		    <div class="y"></div>
+		    <div class="z"></div>
+		</div>
+	</div>
+</div>
+
+
+<!--右侧客服-->
+<div class="FloatingWindow clear">
+	<!-- <a href="http://wpa.qq.com/msgrd?v=3&uin=10001&site=qq&menu=yes" class="FloatingWindow_list fr" target="_blank">
+		<div class="FloatingWindow_list_title">
+			<dd class="iconfont">&#xe675;</dd>
+			<dt>在线咨询</dt>
+		</div>
+	</a> -->
+	<a href="http://wpa.qq.com/msgrd?v=3&uin=10001&site=qq&menu=yes" class="FloatingWindow_list fr" target="_blank">
+		<div class="FloatingWindow_list_title">
+			<dd class="iconfont">&#xe618;</dd>
+			<dt>QQ咨询</dt>
+		</div>
+	</a>
+	<a href="javascript:;" class="FloatingWindow_list fr">
+		<div class="FloatingWindow_list_title">
+			<dd class="iconfont">&#xe619;</dd>
+			<dt>服务热线</dt>
+		</div>
+		<div class="FloatingWindow_list_down bounceInRight animated">服务热线：0476-8783232</div>
+	</a>
+	<a href="javascript:;" class="FloatingWindow_list fr" id="top">
+		<div class="FloatingWindow_list_title">
+			<dd class="iconfont">&#xe628;</dd>
+			<dt>TOP</dt>
+		</div>
+	</a>
+</div>
+
+
+
+
+<div class="WeChatBanner" style="background:url(images/WeChatBanner.jpg) no-repeat 50%/cover;"></div>
+
+
+
+
+
+<div class="IndexService WeChat">
+	<div class="IndexService_content all">
+		<div class="IndexService_content_title">
+			<dd>零售行业痛点</dd>
+		</div>
+		<div class="WeChat_content clear carousel">
+			<div class="WeChat_content_list">
+				<dd><img src="images/bn49.png"></dd>
+				<dt>传统纸质宣传方式成本高，效果欠佳</dt>
+			</div>
+			<div class="WeChat_content_list">
+				<dd><img src="images/bn50.png"></dd>
+				<dt>坐等顾客上门，传统门店逐步沦为“试用店”</dt>
+			</div>
+			<div class="WeChat_content_list">
+				<dd><img src="images/bn51.png"></dd>
+				<dt>暴力刷屏推产品，客户信任度低</dt>
+			</div>
+			<div class="WeChat_content_list">
+				<dd><img src="images/bn52.png"></dd>
+				<dt>缺少数据支撑，顾客难成“回头客”</dt>
+			</div>
+		</div>
+		<div class="WeChat_fan">
+			<dd>粉丝经济时代击破痛点 — 做真正的移动零售</dd>
+			<dt><img src="images/bn53.png"></dt>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="profit">
+	<div class="profit_title">健全的盈利模式--促销粉丝互动亮点</div>
+	<div class="profit_content clear">
+		<div class="profit_content_list fl">
+			<div class="content_list_title">会员推广赚收益</div>
+			<div class="content_list_icon"><img src="images/bn54.png" class="flip"></div>
+			<div class="content_list_txt">平台已注册的会员，可以在会员中心复制自己的专属链接/二维码，在外部社交平台、朋友圈微博等进行推广，外部用户点击或扫描注册后，推荐人会获得相应的奖励（具体奖励由平台方进行设置）</div>
+		</div>
+		<div class="profit_content_list fl">
+			<div class="content_list_title">红包发放模式（卡号+密码）</div>
+			<div class="content_list_icon"><img src="images/bn56.png" class="flip"></div>
+			<div class="content_list_txt">后台可设置红包卡号加密码，线下发给会员，会员即可凭卡号密码兑换红包，十七对红包的钻研一直在加深，为商家在红包促销模式上带来</div>
+		</div>
+		<div class="profit_content_list fl">
+			<div class="content_list_title">红包发放模式（卡号+密码）</div>
+			<div class="content_list_icon"><img src="images/bn57.png" class="flip"></div>
+			<div class="content_list_txt">为了平台能够吸引更多新用户注册，特别为商家开启新手注册送红包功能，相应金额或者明细，商家可以自己在后台调整为平台更好的引流</div>
+		</div>
+		<div class="profit_content_list fl">
+			<div class="content_list_title">首页秒杀商品推荐</div>
+			<div class="content_list_icon"><img src="images/bn61.png" class="flip"></div>
+			<div class="content_list_txt">首页作为用户对平台的入口，在顶部加上秒杀商品，以低价销售的形式，快速提高购买率，册后，推荐人会获得相应的奖励增加人气，带来销量</div>
+		</div>
+		<div class="profit_content_list fl">
+			<div class="content_list_title">积分商城换购</div>
+			<div class="content_list_icon"><img src="images/bn58.png" class="flip"></div>
+			<div class="content_list_txt">平台已注册的会员，可以在会员中心复制自己的专属链接/二维码，在外部社交平台、朋友圈微博等进行推广，外部用户点击或扫描注册后，推荐人会获得相应的奖励（具体奖励由平台方进行设置）</div>
+		</div>
+		<div class="profit_content_list fl">
+			<div class="content_list_title">商城团购功能</div>
+			<div class="content_list_icon"><img src="images/bn59.png" class="flip"></div>
+			<div class="content_list_txt">后台可设置红包卡号加密码，线下发给会员，会员即可凭卡号密码兑换红包，十七对红包的钻研一直在加深，为商家在红包促销模式上带来</div>
+		</div>
+		<div class="profit_content_list fl">
+			<div class="content_list_title">商城砍价功能</div>
+			<div class="content_list_icon"><img src="images/bn60.png" class="flip"></div>
+			<div class="content_list_txt">为了平台能够吸引更多新用户注册，特别为商家开启新手注册送红包功能，相应金额或者明细，商家可以自己在后台调整为平台更好的引流</div>
+		</div>
+		<div class="profit_content_list fl">
+			<div class="content_list_title">商品预售功能</div>
+			<div class="content_list_icon"><img src="images/bn62.png" class="flip"></div>
+			<div class="content_list_txt">首页作为用户对平台的入口，在顶部加上秒杀商品，以低价销售的形式，快速提高购买率，册后，推荐人会获得相应的奖励增加人气，带来销量</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="IndexService program">
+	<div class="IndexService_content all">
+		<div class="program_title">电商系统方案</div>
+		<div class="program_content clear">
+			<div class="program_content_left fl clear">
+				<div class="content_left_list fl">
+					<dd><img src="images/bg37.jpg"></dd>
+					<dt>微官网</dt>
+				</div>
+				<div class="content_left_list fl">
+					<dd><img src="images/bg37.jpg"></dd>
+					<dt>微商城</dt>
+				</div>
+				<div class="content_left_list fl">
+					<dd><img src="images/bg37.jpg"></dd>
+					<dt>O2O平台</dt>
+				</div>
+			</div>
+			<div class="program_content_center fl"><img src="images/bn63.png"></div>
+			<div class="program_content_left fr">
+				<div class="content_left_list fl">
+					<dd><img src="images/bg37.jpg"></dd>
+					<dt>微官网</dt>
+				</div>
+				<div class="content_left_list fl">
+					<dd><img src="images/bg37.jpg"></dd>
+					<dt>微商城</dt>
+				</div>
+				<div class="content_left_list fl">
+					<dd><img src="images/bg37.jpg"></dd>
+					<dt>O2O平台</dt>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="IndexService program_service">
+	<div class="IndexService_content all">
+		<div class="program_service_title">
+			<dd>千锤百炼 精益求精 - 给您优质的服务</dd>
+			<dt>
+				<p>只有想不到，没有做不到，提升优化后的功能，不止为了好的用户体验，更是希望把产品推向一个新的高度 拥有诸多特色而又实用的强</p>
+				<p>大功能，打造不凡的微商城，让你轻轻松松做微商！</p>
+			</dt>
+		</div>
+		<div class="program_service_content clear">
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn64.png"></dd>
+				<dt>首页</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn65.png"></dd>
+				<dt>分类</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn66.png"></dd>
+				<dt>搜索</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn67.png"></dd>
+				<dt>购物车</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn68.png"></dd>
+				<dt>我</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn69.png"></dd>
+				<dt>专题</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn70.png"></dd>
+				<dt>我的关注</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn71.png"></dd>
+				<dt>物流查询</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn72.png"></dd>
+				<dt>待付款</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn73.png"></dd>
+				<dt>评价</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn74.png"></dd>
+				<dt>品牌节</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn75.png"></dd>
+				<dt>积分换购</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn76.png"></dd>
+				<dt>充值提现</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn77.png"></dd>
+				<dt>浏览历史</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn78.png"></dd>
+				<dt>消息</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn79.png"></dd>
+				<dt>促销活动</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn80.png"></dd>
+				<dt>团购系统</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn81.png"></dd>
+				<dt>我的收藏</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn82.png"></dd>
+				<dt>待发货</dt>
+			</div>
+			<div class="service_content_list fl shadow7">
+				<dd><img src="images/bn83.png"></dd>
+				<dt>我的钱包</dt>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="IndexService WeChat Mall">
+	<div class="IndexService_content all">
+		<div class="IndexService_content_title">
+			<dd>为什么选择十七的微商城</dd>
+			<dt>依托微信群众传播优势，快速扩展品牌知名度，打造符合企业自身的微信营销方式</dt>
+		</div>
+		<div class="WeChat_content clear carousel Mall_content">
+			<div class="WeChat_content_list">
+				<dd><img src="images/bn84.png"></dd>
+				<dt>经验丰富</dt>
+				<p>多年从事微信开发服务、开发团队技术过硬</p>
+			</div>
+			<div class="WeChat_content_list">
+				<dd><img src="images/bn85.png"></dd>
+				<dt>一站式服务</dt>
+				<p>包含微商城、微分销、微拼团、微众筹的一站式服务</p>
+			</div>
+			<div class="WeChat_content_list">
+				<dd><img src="images/bn86.png"></dd>
+				<dt>提供产品源码</dt>
+				<p>拥有产品的系统源码才是完全属于自己的系统</p>
+			</div>
+			<div class="WeChat_content_list">
+				<dd><img src="images/bn87.png"></dd>
+				<dt>支持二次开发</dt>
+				<p>让企业可以发挥自己的想象力去对产品进行二次开发定制</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<div class="IndexService IndexCase case app_case">
+	<div class="IndexService_content all">
+		<div class="app_case_title">相关案例 / related cases</div>
+		<div class="IndexCase_content clear">
+			<div class="IndexCase_content_list fl">
+				<div class="content_list_img">
+					<div class="list_img_title"><img src="images/ptj_2.jpg" class="tra"></div>
+                    <div class="content_list_txt">
+                    	<div class="list_txt_logo"><img src="images/ptj.jpg" alt="" title=""></div>
+                        <div class="list_txt_title">进口葡萄酒商城</div>
+                        <div class="list_txt_content">
+                        	随着中国经济崛起，人民生活水平提高，红酒市场空间迅速扩大。但在当下市场存在品牌质量价格虚假严峻。我公司秉承对消费者负责任的心态，致力打造 集葡萄酒文化，葡萄酒种植 酿制 进口 分享经济 消费创业 质优价实为一体的物联网葡萄酒平台。
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<div class="IndexCase_content_list fl">
+				<div class="content_list_img">
+					<div class="list_img_title"><img src="images/sp2.jpg" class="tra"></div>
+                    <div class="content_list_txt">
+                    	<div class="list_txt_logo"><img src="images/sp.jpg" alt="" title=""></div>
+                        <div class="list_txt_title">东北小子</div>
+                        <div class="list_txt_content">
+                        	本公司专业生产烤冷面、朝鲜冷面、米线、土豆粉等各种东北特色小吃原料、调料。 全国各地拥有2000余家由我们长期直供货源的小吃店，我们不收加盟费，免费提供技术，出厂价格出售原料、调料 ，几百元就可以成就您的事业梦 ，欢迎有识之士加入 .
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<div class="IndexCase_content_list fl">
+				<div class="content_list_img">
+					<div class="list_img_title"><img src="images/zb2.jpg" class="tra"></div>
+                    <div class="content_list_txt">
+                    	<div class="list_txt_logo"><img src="images/zb.jpg" alt="" title=""></div>
+                        <div class="list_txt_title">龙凤珠宝</div>
+                        <div class="list_txt_content">
+                        	龙凤珠宝是一家现代化大型珠宝首饰综合性企业，业务涵盖至采购、研发、生产、批发和零售等领域。龙凤对整个珠宝产业链深度渗透，能够最大限度的实现顾客利益最大化。
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<div class="IndexCase_content_list fl">
+				<div class="content_list_img">
+					<div class="list_img_title"><img src="images/dq2.jpg" class="tra"></div>
+                    <div class="content_list_txt">
+                    	<div class="list_txt_logo"><img src="images/dq.jpg" alt="" title=""></div>
+                        <div class="list_txt_title">这有电工电器</div>
+                        <div class="list_txt_content">
+                        	本商城位于中国物流发达、交通便利的中心城市。河南省会--郑州。是集开发，生产，销售，服务为一体的综合型企业。
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="app_footer WeChat_footer">
+	<a href="http://wpa.qq.com/msgrd?v=3&uin=10001&site=qq&menu=yes" target="_blank">想要建站？立即咨询我们</a>
+</div>
+
+
+
+
+
+<div class="footer">
+	<div id="mydiv" style="height:465px;"></div>
+	<div class="footer_content">
+	
+		<div class="footer_content_top clear">
+			<div class="content_top_share fl">
+				<div><img src="images/logo.png"></div>
+				<div class="top_share_content">
+					<dd>分享至：</dd>
+					<dt class="bdsharebuttonbox clear" id="share">
+						<a href="#" class="bds_tsina iconfont fl" data-cmd="tsina" title="分享到新浪微博">&#xe632;</a>
+						<a href="#" class="bds_sqq iconfont fl" data-cmd="sqq" title="分享到QQ好友">&#xe663;</a>
+						<a href="#" class="bds_weixin iconfont fl" data-cmd="weixin" title="分享到微信">&#xe603;</a>
+						<a href="#" class="bds_weixin iconfont fl" data-cmd="tieba" title="分享到贴吧">&#xe683;</a>
+					</dt>
+					<script>
+						window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+					</script>
+				</div>
+			</div>
+			<div class="content_top_left fl clear">
+				<div class="top_left_list fl">
+					<dd><a href="about.html#">关于我们</a></dd>
+					<dt>
+						<a href="about.html#">公司简介</a>
+						<a href="about.html##qywh">企业文化</a>
+						<a href="about.html##zzry">资质荣誉</a>
+					</dt>
+				</div>
+				<div class="top_left_list fl">
+					<dd><a href="service.html#">服务项目</a></dd>
+					<dt>
+						<a href="service.html#">高端网站定制</a>
+						<a href="weixin.html#">微信开发</a>
+						<a href="app.html">APP开发</a>
+						<a href="yingxiao.html">网络营销</a>
+					</dt>
+				</div>
+				<div class="top_left_list fl">
+					<dd><a href="news.html">新闻动态</a></dd>
+					<dt>
+						<a href="newsinfo.html#hyxw/">行业新闻</a>
+						<a href="newsinfo.html#xuetang/">建站学堂</a>
+						<a href="newsinfo.html#wenti/">常见问题</a>
+					</dt>
+				</div>
+				<div class="top_left_list fl">
+					<dd><a href="contact.html">联系我们</a></dd>
+					<dt>
+						<a href="contact.html">联系我们</a>
+						<a href="contact.html">人才招聘</a>
+					</dt>
+				</div>
+			</div>
+			<div class="content_top_right fr">
+				<div class="top_right_title">联系方式</div>
+				<div class="top_right_content">
+					<div class="right_content_list clear">
+						<dd class="fl iconfont">&#xe62c;</dd>
+						<dt class="fl">电话：0476-8783232</dt>
+					</div>
+					<div class="right_content_list clear">
+						<dd class="fl iconfont">&#xe663;</dd>
+						<dt class="fl">QQ：3279919  / 1916455856</dt>
+					</div>
+					<div class="right_content_list clear">
+						<dd class="fl iconfont">&#xe624;</dd>
+						<dt class="fl">邮箱：1916455856@qq.com</dt>
+					</div>
+					<div class="right_content_list clear">
+						<dd class="fl iconfont">&#xe604;</dd>
+						<dt class="fl">地址：赤峰市新城区上海城盘古电商A11-310/311</dt>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer_content_bottom clear">
+			<div class="content_bottom_left fl">友情链接：</div>
+			<div class="content_bottom_right clear fl">
+				 
+				<a href="http://www.baidu.com" target="_blank" class="fl">百度</a>
+				
+			</div>
+		</div>
+	</div>
+	<div class="footer_content_copyright clear">Copyright©2012-2022 赤峰九度信息技术服务有限公司版权所有   <a href="http://www.miitbeian.gov.cn/"  rel="nofollow" target="_blank">备案号：蒙ICP备18005008号-2</a></div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/canvas.js"></script>
+<script src="js/global.js"></script>
+<script src="js/iconfont.js"></script>
+<script src="js/carousel.js"></script>
+<script>
+$(document).ready(function($) {
+	$('.carousel').owlCarousel({
+		loop:false,
+		margin:90,
+		nav:true,
+		lazyLoad:true, 
+		autoplay:false,//是否开启自动播放
+        autoplayTimeout:1000,//控制自动播放的速度
+        merge: true, 
+		video: true,
+        responsive:{	
+		    120:{items:1},//当屏幕大小缩小到480的时候变2个
+            480:{items:1},//当屏幕大小缩小到480的时候变2个
+			678:{items:2},//当屏幕大小缩小到678的时候变3个
+			960:{items:3},//当屏幕大小缩小到960的时候变5个
+			1200:{items:4},
+		}
+	});
+});
+</script>
+</body>
+</html>
